@@ -6,7 +6,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(requset):
-	return render(requset , 'PortApp/dashboard.html')
+	return render(requset , 'PortApp/ta.html')
 
 
 
