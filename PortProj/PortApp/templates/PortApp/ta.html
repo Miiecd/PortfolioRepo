@@ -66,23 +66,6 @@
         <div class="menu-toggle">
           <ion-icon name="menu"></ion-icon>
         </div>
-
-        
-        <div class="media">
-          <ul>
-            <li>
-              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-            </li>
-            <li>
-              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-            </li>
-            <li>
-              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-            </li>
-          </ul>
-        </div>
-
-
        
         <div class="hero-title">
           <h1>Najd | Portfolio</h1>
@@ -205,32 +188,10 @@
         delay: 1.2
       });
 
-      TweenMax.from(".view-photos", 2, {
-        y: 20,
-        opacity: 0,
-        ease: Expo.easeInOut,
-        delay: 1.4
-      });
-
-      TweenMax.staggerFrom(
-        ".media ul li",
-        2,
-        {
-          y: 20,
-          opacity: 0,
-          ease: Expo.easeInOut,
-          delay: 1.6
-        },
-        0.1
-      );
+     
 
       t1.to(".overlay", 1, {
         opacity: 1,
-        ease: Expo.easeInOut
-      });
-
-      t1.to(".view-photos, .media", 1, {
-        opacity: 0,
         ease: Expo.easeInOut
       });
 
@@ -260,37 +221,8 @@
         scale: 1.8
       });
 
-      var image = document.getElementsByClassName("project-1-img");
-      new simpleParallax(image, {
-        scale: 1.8
-      });
+      
 
-      var image = document.getElementsByClassName("project-2-img");
-      new simpleParallax(image, {
-        scale: 1.8
-      });
-
-      var image = document.getElementsByClassName("project-3-img");
-      new simpleParallax(image, {
-        scale: 1.8
-      });
-
-      var image = document.getElementsByClassName("project-4-img");
-      new simpleParallax(image, {
-        scale: 1.8
-      });
-
-      var image = document.getElementsByClassName("project-5-img");
-      new simpleParallax(image, {
-        scale: 1.8
-      });
-
-      var image = document.getElementsByClassName("project-6-img");
-      new simpleParallax(image, {
-        scale: 1.8
-      });
-
-     
       $('a[href*="#"]')
 
         .not('[href="#"]')
